@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(dave.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#home {
+    background-color: #f44336;
+}
+
+#about {
+    background-color: #ff9800;
+}
+
+#projects {
+    background-color: #03a9f4;
+}
+
+#contact {
+    background-color: #4caf50;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-link ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link ul li {
+    list-style: none;
+    margin-left: 20px;
+    position: relative;
+}
+
+.nav-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.nav-link ul li a:hover {
+    color: #f44336;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav.fa {
+    display: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.container p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section-content {
+    color: #555;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info span {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact-info a {
+    color: #f44336;
+}
+
+.close-icon {
+    display: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .container p {
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    nav.fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .close-icon {
+        display: inline-block;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+        padding: 30px;
+    }
+
+    .nav-link.open {
+        right: 0;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link ul li {
+        margin-bottom: 10px;
+    }
+
+    nav.fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .close-icon {
+        display: inline-block;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+}
